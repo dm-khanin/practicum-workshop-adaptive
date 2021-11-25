@@ -35,6 +35,7 @@ body {
 
 .cover {
   max-width: 1184px;
+  min-width: 320px;
   border: 1px solid black;
 }
 
@@ -98,4 +99,53 @@ body {
 
 .cover__list:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover {
+    max-width: 100%;
+  }
+
+  .cover__link {
+    min-height: 640px;
+    padding-top: 196px;
+  }
+
+  .cover__list:last-of-type {
+    display: none;
+  }
+
+  .cover__title {
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__link {
+    min-height: 480px;
+    padding-top: 115px;
+  }
+
+  .cover__title {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover__link {
+    min-height: 200px;
+    padding-left: 16px;
+    padding-top: 20px;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 16px;
+  }
+
+  .cover__list {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
